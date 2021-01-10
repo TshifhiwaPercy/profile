@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+<head>
+	<title runat="server" id="tab_title">Tshifhiwa Mphoshoamli</title>
+  <!--Materialie css-->
+		<link rel = "stylesheet" href = "frameworks/materialize/css/materialize.min.css" />
+		<link rel = "stylesheet" href= "frameworks/materialize/css/materialize.css" />
+    <link rel="stylesheet" href= "fonts/google_fonts.css" />
+    
+
+  <!--User defined css-->
+  <link rel="stylesheet" href="css/normalUsers/profile_page.css" />
+  <link rel="stylesheet" href="frameworks/bootstrap/bootstrap-icons-1.2.2/font/bootstrap-icons.css" />
+
+  <!--Materailie js-->
+	<script src = "frameworks/materialize/js/materialize.js"></script>
+  <script src = "frameworks/materialize/js/materialize.min.js"></script>
+
+  <!--User defined js-->
+  <script type="text/javascript" src="javascript/normalUsers/profile_pageLoad.js"></script>
+
+	    <!-- Initiliazation of side nav-->
+	<script type="text/javascript" >
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+
+    </script>
+
+</head>
+<body onload="pageLoad();" onresize="pageLoad();">
+
+	<!--Navigation -->
+	  <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo center" style="font-family: 'Nerko One', cursive; font-size:200%">User Profile</a>
+        </div>
+      </nav>
+        <!--Cell phone nav bar-->
+          <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li><div class="user-view">
+              <div class="background" style="height:200px;width:300px;">
+              </div>
+            </div></li>
+              <li style="margin-top:200px"><div class="divider" id="divider" ></div></li>
+              <li ><a id="navBarItem" class="waves-effect"><i id="icond" class="material-icons">dashboard</i>Browse tutors</a></li>
+            <li><a clas="navBarItem" href="#!" class="waves-effect"><i id="icond" class="material-icons">cloud</i>Contribute</a></li>
+            <li><a class="navBarItem" href="#!" class="waves-effect"><i class="material-icons">people</i>About</a></li>
+            <li><a class="navBarItem" class="waves-effect" href="#!"><i class="material-icons">trending_up</i>Contact Us</a></li>
+            <li><a class="navBarItem" class="waves-effect" href="#!"><i class="material-icons">message</i>Report a problem</a></li>
+            <li><a class="navBarItem" class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a></li>
+              <li><div class="divider" id="divider"></div></li>
+              <li id="btnCon"><button class="btn large"  id="btnLogOut" runat="server">Sign Out</button></li>
+              <li class="row social_Media_Links" style="margin-bottom:0;" ><p id="social_Media_Links">
+                <label id="lblFacebookLink"><a href="facebook.com" id="link_Facebook"><img src="icons/facebook.png" width=30px></a></label>
+                <label id="lblGoogleLink"><a href="google.com" ><img src="icons/google.png" width=30px/></a></label>
+                <label id="lblTwitterLink"><a href="twitter.com" ><img src="icons/twitter.png" width=30px/></a></label>
+                </p>
+              </li>
+              <li id="lblCompanyName"><p id="companyName">@Study overnight</p></li>
+              
+          </ul>
+	<!--/End of navigation menu-->
+  
+  <!--Profile body-->
+  <div class="row teal darken-3" id="informationContainer_div">
+    
+    <div class="col s12 m12 l6 xl6">
+      <center>
+      	<div id="user_avatar_container" onmouseover="unHide('user_avatar')" onmouseOut="hideControls('user_avatar')">
+      		<p id="user_avatar"><i class="bi-camera" style="font-size:20px;margin-right:2px"></i>Update Profile</p>
+      	</div>
+      	<div id="user_name_div">
+      		<label id="user_name_label">Tshifhiwa Mphoshomali</label>
+      	</div>
+      	<div id="user_email_div">
+      		<label id="user_email_label">tshifhiwamphoshomali@gmail.com</label>
+      	</div>
+      </center>
+    </div>
+
+    <div class="col s12 m12 l6 xl6" id="user_addInfo_div">
+      <h5 id="general_addInfo_header" style="text-align:center;">General Information</h5>
+
+      <label id="lblUserName" style="color:white;">UserName:</label><br />
+      <input type="text" class="input_field" id="txtUserName" value="Roadblock2000"  /><br/>
+
+      <label id="lblUserEmail" style="color:white;"  >Email:</label><br />
+      <input type="email" class="input_field" id="txtUserEmail" readonly = "readonly" value="tshifhiwamphoshomali@gmail.com" /><i onclick="document.getElementById('txtUserEmail').removeAttribute('readonly');document.getElementById('txtUserEmail').focus();" class="bi-pencil" style="font-size:20px;color:rgb(227,217,87)"></i><br/>
+
+      <label style="color:white;">Please indicate your tertiary institution:</label>
+      <select class="browser-default" id="select-university">
+        <option value="" disabled selected>...</option>
+        <option value="">University of Johannesburg</option>
+        <option value="">North-West University</option>
+        <option value ="">University of Pretoria</option>
+        <option value="">University of CapeTown</option>
+        <option value="">Vaal University of Technology</option>
+        <option value="">University of Venda</option>
+        <option value="">University of Limpopo</option>
+        <option value="">Other</option>
+      </select>
+      
+      <label  id="lblYearOfStudy">Please indicate your year of study</label>
+      <select class="browser-default" id="select_yearOfStudy">
+        <option value="" disabled selected>...</option>
+        <option value="" >First year/Fresh-man</option>
+        <option value="" >Second year/Senior year</option>
+        <option value="" >Third year</option>
+        <option value="">Fourth year</option>
+        <option value="">Other</option>
+      </select>
+      <button class="waves-effect btn medium" id="btnSaveChanges">Save Changes</button>
+    </div>
+
+  </div>
+</body>
+</html>

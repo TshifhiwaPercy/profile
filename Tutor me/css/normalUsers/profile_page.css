@@ -1,0 +1,102 @@
+.background{
+	background-image:url("../../images/logo/study_tonight_200x200.png");
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.social_Media_Links{
+	margin-bottom:0;
+	margin-top:0;
+	height:40px;
+}
+#social_Media_Links > label{
+	padding-left:5%;
+}
+#lblGoogleLink{
+	padding-left:0;
+}
+#lblFacebookLink
+{
+	padding-right:5%;
+	padding-left:0%;
+}
+
+
+#btnLogOut{
+	margin-left:100px;
+}
+#social_Media_Links{
+	margin-top:9px;
+	text-align:center;
+	align-content:center;
+
+}
+#lblCompanyName{
+	margin-top:0;
+	height:40px;
+}
+#companyName
+{
+	color:grey;
+	text-align:center;
+}
+#uploadNewImage{
+	background-color:rgba(226,226,226,0.4);
+	color:rgb(129,146,205);
+	font-size:22px;
+	width:200px;
+	height:200px;
+	margin-top:10%;
+	position:relative;
+
+	
+
+}
+#user_avatar_container{
+	margin-top:20px;
+	height:200px;
+	width:200px;
+	color:white;
+	border-radius:50%;
+	text-align:center;
+	background-image:url("../../images/users/605993.jpg");
+	background-size:200px 200px;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow: hidden;
+	
+}
+	#user_avatar{
+		background-color:rgba(150,150,150,0.4);
+		height:100%;
+		border-radius:50%;
+		margin:0;
+		text-align:middle;
+		padding-top:45%;
+		
+
+	}
+#user_name_label{
+	font:bold;
+	font-size:20px;
+	color:black;
+}
+#user_email_label{
+	font:italic;
+	color:grey;
+}
+
+#userName{
+	font:bold;
+	font-size:22px;
+	
+
+}
+#userEmail{
+	color:grey;
+	font-size:12px;
+	
+}
+#txtUserName,#txtUserEmail{
+	width:70%;
+	border-bottom:0px;
+}
