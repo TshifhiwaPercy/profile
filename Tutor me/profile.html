@@ -35,7 +35,7 @@
 	  <nav>
         <div class="nav-wrapper">
             <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <a href="#" class="brand-logo center" style="font-family: 'Nerko One', cursive; font-size:200%">User Profile</a>
+            <a href="#" class="brand-logo center" style="font-family: 'Nerko One', cursive; font-size:200%">Profile</a>
         </div>
       </nav>
         <!--Cell phone nav bar-->
@@ -65,11 +65,12 @@
 	<!--/End of navigation menu-->
   
   <!--Profile body-->
-  <div class="row teal darken-3" id="informationContainer_div">
+  <div class="row" id="informationContainer_div">
     
     <div class="col s12 m12 l6 xl6">
       <center>
-      	<div id="user_avatar_container" onmouseover="unHide('user_avatar')" onmouseOut="hideControls('user_avatar')">
+      	<div id="user_avatar_container">
+          <img src="images/users/605993.jpg" id="user_profile_image" />
       		<p id="user_avatar"><i class="bi-camera" style="font-size:20px;margin-right:2px"></i>Update Profile</p>
       	</div>
       	<div id="user_name_div">
@@ -85,7 +86,7 @@
       <h5 id="general_addInfo_header" style="text-align:center;">General Information</h5>
 
       <label id="lblUserName" style="color:white;">UserName:</label><br />
-      <input type="text" class="input_field" id="txtUserName" value="Roadblock2000"  /><br/>
+      <input type="text" class="input_field" id="txtUserName" value="Roadblock2000" readonly="readonly" /><br/>
 
       <label id="lblUserEmail" style="color:white;"  >Email:</label><br />
       <input type="email" class="input_field" id="txtUserEmail" readonly = "readonly" value="tshifhiwamphoshomali@gmail.com" /><i onclick="document.getElementById('txtUserEmail').removeAttribute('readonly');document.getElementById('txtUserEmail').focus();" class="bi-pencil" style="font-size:20px;color:rgb(227,217,87)"></i><br/>
