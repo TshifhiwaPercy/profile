@@ -5,6 +5,7 @@ body{
 	background-image:url("../../images/logo/study_tonight_200x200.png");
 	background-position:center;
 	background-repeat:no-repeat;
+	border-radius: 50%;
 }
 .nav-wrapper{
 	background-color:#009688; 
@@ -125,7 +126,7 @@ body{
 	border-bottom:0px;
 	
 }
-#txtUserName{
+#txtUserName,#txtUserEmail{
 
 	
 	padding-left:1%;
@@ -136,11 +137,9 @@ body{
 }
 select{
 	width:200px;
+	height:30px;
 	border-top:0;
-	background-color:inherit;
-	border-right:0;
-	border-left:0;
-	background-bottom:1px solid grey;
+	background-color:shite;
 }
 #btnSaveChanges{
 	bottom:0;
